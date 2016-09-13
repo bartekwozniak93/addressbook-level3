@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 import seedu.addressbook.logic.Logic;
 import seedu.addressbook.Main;
 
+import javafx.scene.image.Image;
 import java.io.File;
 import java.io.IOException;
 
@@ -40,6 +41,7 @@ public class Gui {
         stage.setTitle(version);
         stage.setScene(new Scene(loader.load(), INITIAL_WINDOW_WIDTH, INITIAL_WINDOW_HEIGHT));
         stage.show();
+        stage.getIcons().add(new Image(Main.class.getResource("ui" + File.separator + "icon.png").toString()));
         MainWindow mainWindow = loader.getController();
         mainWindow.setLogic(logic);
         mainWindow.setMainApp(mainApp);
