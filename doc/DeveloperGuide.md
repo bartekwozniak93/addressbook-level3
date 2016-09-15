@@ -46,7 +46,7 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | delete a person | remove entries that I no longer need
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* * *` | user | update a person's details | update details of a person
-`* **` | user | undo last executed operation | fix a mistake 
+`* *` | user | undo last executed operation | fix a mistake 
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
 
@@ -59,7 +59,7 @@ Priority | As a ... | I want to ... | So that I can...
 
 **MSS**
 
-1. User requests to list persons
+1. User requests to list tags
 2. AddressBook shows a list of tags
 3. User requests to rename a specific tag in the list
 4. AddressBook requests for confirmation
